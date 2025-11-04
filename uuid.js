@@ -5,10 +5,10 @@ const students = [
   { fullName: "Itay Cohen", grade: 81 },
 ]
 
-const idStudents = students.map(student => {
+const idStudents = students.map((student,index) => {
   return { 
     ...student, 
-    id: uuid.v4()
+    id: index + 1
  };
 });
 
